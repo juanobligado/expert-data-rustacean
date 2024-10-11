@@ -1,0 +1,19 @@
+{
+  "name" : "My Rust Environment",
+  "image": "rust:latest",
+  "features": {
+     "ghcr.io/devcontainers/features/github-cli:1": {}
+  },
+  "customizations" : {
+      "vscode": {
+      "extensions": [
+        "rust-lang.rust-analyzer",
+        "GitHub.copilot"
+      ]
+    }
+  },
+  "settings": {
+    "rust-analyzer.cargo.autoReload": true,
+    "editor.formatOnSave": true
+  }
+}
